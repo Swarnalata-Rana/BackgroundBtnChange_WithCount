@@ -18,7 +18,7 @@ const Color_component = () => {
         <button className='redbtn' onClick={()=>{onClickRedBtn="red"}}>RedBtn</button>
         <button className='yellobtn' onClick={()=>{onClickyelloBtn="yello"}}>YelloBtn</button>
         <button className='bluebtn' onClick={()=>{onClickblueBtn="blue"}}>BlueBtn</button>
-        <button className='greenbtn' onClick={()=>{onClickgreenBtn="green"}}>GreenBtn</button>
+
     </div>
   )
 }

@@ -1,13 +1,85 @@
-.maindiv{
+.main_box{
   border: 1px solid red;
-
-  height: 100px;
+  background-color: pink;
+  height: 700px;
   margin: auto;
-  width: 1000px;
+  width: 700px;
 }
-.box{
-  /* border: 1px solid red; */
-  height: 200px;
-  margin: auto;
-  width: 1000px;
+.box1{
+border: 1px solid red;
+height: 300px;
+}
+.color_box{
+border: 1px solid red;
+height: 200px;
+margin: auto;
+width: 300px;
+margin-top: 30px;
+background-color: rgb(87, 87, 103);
+}
+.count_box{
+  /* align-items: center;
+  justify-content: center; */
+  margin-top: 20px;
+  margin-left: 140px;
+  /* display: wrap; */
+}
+.count_box2{
+  /* margin-left:10px; */
+  display: flex;
+
+}
+.Red_color{
+  border: 1px solid black;
+  width: 348px;
+  float: left;
+  height: 198px;
+}
+.yellow_color{
+  border: 1px solid black;
+  width: 348px;
+  float: left;
+  height: 198px;
+
+}
+.blue_color{
+  border: 1px solid black;
+  width: 348px;
+  float: left;
+  height: 196px;
+
+}
+.green_color{
+  border: 1px solid black;
+  width: 348px;
+  float: left;
+  height: 196px;
+
+}
+.redbtn{
+  background-color: red;
+  align-items: center;
+  padding: 20px;
+  margin-top: 70px;
+  margin-left: 110px;
+}
+.yellowbtn{
+  background-color: yellow;
+  padding: 20px;
+  margin-top: 70px;
+  margin-left: 110px;
+
+}
+.bluebtn{
+  background-color: blue;
+  padding: 20px;
+  margin-top: 70px;
+  margin-left: 110px;
+
+}
+.greenbtn{
+  background-color: green;
+  padding: 20px;
+  margin-top: 70px;
+  margin-left: 110px;
 }

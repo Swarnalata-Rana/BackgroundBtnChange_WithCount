@@ -1,26 +1,19 @@
-import React from 'react'
-
-const Color_component = () => {
-    const onClickRedBtn=(e)=>{
-      console.log(e)
-    }
-    const onClickyelloBtn=(e)=>{
-      console.log(e)
-    }
-    const onClickblueBtn=(e)=>{
-      console.log(e)
-    }
-    const onClickgreenBtn=(e)=>{
-      console.log(e)
+import React, { useState } from 'react'
+const Color_component = ({onCheng}) => {
+  const[color,setColor]=useState('');
+    const handleClickFunction=(event)=>{
+      setColor(event)
+      onCheng(event)
     }
   return (
-    <div>        
-        <button className='redbtn' onClick={()=>{onClickRedBtn="red"}}>RedBtn</button>
-        <button className='yellobtn' onClick={()=>{onClickyelloBtn="yello"}}>YelloBtn</button>
-        <button className='bluebtn' onClick={()=>{onClickblueBtn="blue"}}>BlueBtn</button>
-
+    <div className='main'>    
+        <div className='box' style={{backgroundColor:color}}>Chenging Box</div>    
+            <button className='redbtn' onClick={()=>handleClickFunction("red")}>RedBtn</button>
+            <button className='yellobtn' onClick={()=>handleClickFunction("yellow")}>YelloBtn</button>
+            <button className='bluebtn' onClick={()=>handleClickFunction("blue")}>BlueBtn</button>
+            <button className='greenbtn' onClick={()=>handleClickFunction("green")}>GreenBtn</button>
     </div>
   )
 }
+export default Color_component;
 
-export default Color_component
